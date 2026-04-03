@@ -8,7 +8,7 @@
  ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓███████▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
 ```
 
-<img src="./cybr-obsidian.png"/></td>
+<img src="./cybr-obsidian-big.png"/></td>
 <img src="https://raw.githubusercontent.com/cybrcore/cybrland/refs/heads/main/assets/inspiration/insp-cybrsidian-all.jpg"/></td>
 
 # Steps
