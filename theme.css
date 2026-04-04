@@ -1904,17 +1904,17 @@ body.cybrcore-hide-sidebar-toggle .workspace-ribbon-collapse-btn { display: none
 body::before { content: ''; position: fixed; inset: 0; background-image: var(--cybr-wp-url, none); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 1; pointer-events: none; z-index: -1; }
 
 body.cybr-wp-none      { --cybr-wp-url: none; }
-body.cybr-wp-samurai   { --cybr-wp-url: url('https://cdn.jsdelivr.net/gh/scherrer-txt/cybrland/stylus/samurai-2560x1440.webp'); }
-body.cybr-wp-chiyoda   { --cybr-wp-url: url('https://cdn.jsdelivr.net/gh/scherrer-txt/cybrland/stylus/chiyoda-2560x1440.webp'); }
-body.cybr-wp-ikebukuro { --cybr-wp-url: url('https://cdn.jsdelivr.net/gh/scherrer-txt/cybrland/stylus/ikebukuro-2560x1440.webp'); }
-body.cybr-wp-minato    { --cybr-wp-url: url('https://cdn.jsdelivr.net/gh/scherrer-txt/cybrland/stylus/minato-2560x1440.webp'); }
-body.cybr-wp-roppongi  { --cybr-wp-url: url('https://cdn.jsdelivr.net/gh/scherrer-txt/cybrland/stylus/roppongi-2560x1440.webp'); }
-body.cybr-wp-shibuya   { --cybr-wp-url: url('https://cdn.jsdelivr.net/gh/scherrer-txt/cybrland/stylus/shibuya-2560x1440.webp'); }
-body.cybr-wp-shinjuku  { --cybr-wp-url: url('https://cdn.jsdelivr.net/gh/scherrer-txt/cybrland/stylus/shinjuku-2560x1440.webp'); }
-body.cybr-wp-taito     { --cybr-wp-url: url('https://cdn.jsdelivr.net/gh/scherrer-txt/cybrland/stylus/taito-2560x1440.webp'); }
-body.cybr-wp-yoyogi    { --cybr-wp-url: url('https://cdn.jsdelivr.net/gh/scherrer-txt/cybrland/stylus/yoyogi-2560x1440.webp'); }
-body.cybr-wp-harajuku  { --cybr-wp-url: url('https://8upload.com/image/e0476e0c873ea751/harajuku-7680x4320.png'); }
-body.cybr-wp-akihabara { --cybr-wp-url: url('https://8upload.com/image/4c466f8c734441c9/akihabara-4480x2520.jpg'); }
+body.cybr-wp-samurai   { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/samurai-2560x1440.webp'); }
+body.cybr-wp-chiyoda   { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/chiyoda-2560x1440.webp'); }
+body.cybr-wp-ikebukuro { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/ikebukuro-2560x1440.webp'); }
+body.cybr-wp-minato    { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/minato-2560x1440.webp'); }
+body.cybr-wp-roppongi  { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/roppongi-2560x1440.webp'); }
+body.cybr-wp-shibuya   { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/shibuya-2560x1440.webp'); }
+body.cybr-wp-shinjuku  { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/shinjuku-2560x1440.webp'); }
+body.cybr-wp-taito     { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/taito-2560x1440.webp'); }
+body.cybr-wp-yoyogi    { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/yoyogi-2560x1440.webp'); }
+body.cybr-wp-harajuku  { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/harajuku-2560x1440.webp'); }
+body.cybr-wp-akihabara { --cybr-wp-url: url('https://raw.githubusercontent.com/cybrcore/cybrpapers/refs/heads/main/web/akihabara-2560x1440.webp'); }
 
 body.cybrcore-solid-bg::before { display: none !important; }
 body.cybrcore-solid-bg { background-color: var(--cybr-bg-color, var(--cybr-no0)) !important; }
