@@ -2,8 +2,8 @@
 
 /* @settings
 
-name: cybr-obsidian
-id: cybrsidian
+name: cybrcore
+id: cybrcore
 settings:
 
   # ══ WALLPAPER ════════════════════════════════════════════════
@@ -14,7 +14,7 @@ settings:
     level: 1
     collapsed: true
 
-  - id: cybrsidian-wallpaper
+  - id: cybrcore-wallpaper
     title: Wallpaper
     type: class-select
     default: cybr-wp-none
@@ -54,7 +54,7 @@ settings:
     step: 0.01
     format: " "
 
-  - id: cybrsidian-solid-bg
+  - id: cybrcore-solid-bg
     title: Solid Background
     description: "Replaces wallpaper with a flat color"
     type: class-toggle
@@ -98,7 +98,7 @@ settings:
     level: 1
     collapsed: true
 
-  - id: cybrsidian-primary
+  - id: cybrcore-primary
     title: Primary
     description: "User text · headings · tags · active state bg"
     type: class-select
@@ -127,7 +127,7 @@ settings:
       - label: Black
         value: cybr-p-no
 
-  - id: cybrsidian-secondary
+  - id: cybrcore-secondary
     title: Secondary
     description: "Internal interactive · nav · buttons"
     type: class-select
@@ -156,7 +156,7 @@ settings:
       - label: Black
         value: cybr-s-no
 
-  - id: cybrsidian-tertiary
+  - id: cybrcore-tertiary
     title: Tertiary
     description: "External links · outgoing actions"
     type: class-select
@@ -745,7 +745,7 @@ settings:
     level: 1
     collapsed: true
 
-  - id: cybrsidian-mono
+  - id: cybrcore-mono
     title: Enable
     type: class-toggle
     default: false
@@ -789,54 +789,54 @@ settings:
     level: 1
     collapsed: true
 
-  - id: cybrsidian-underline-internal
+  - id: cybrcore-underline-internal
     title: Underline Internal
     type: class-toggle
     default: true
 
-  - id: cybrsidian-underline-external
+  - id: cybrcore-underline-external
     title: Underline External
     type: class-toggle
     default: true
 
-  - id: cybrsidian-hide-right-top
+  - id: cybrcore-hide-right-top
     title: Hide Right Top Bar
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-tabs
+  - id: cybrcore-hide-tabs
     title: Hide Tab Headers
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-ribbon
+  - id: cybrcore-hide-ribbon
     title: Hide Ribbon
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-bottom-nav
+  - id: cybrcore-hide-bottom-nav
     title: Hide Vault Profile
     description: Vault icon and switcher at the base of the left sidebar
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-sidebar-toggle
+  - id: cybrcore-hide-sidebar-toggle
     title: Hide Sidebar Toggle Buttons
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-nav-buttons
+  - id: cybrcore-hide-nav-buttons
     title: Hide File Explorer Buttons
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-system-icons
+  - id: cybrcore-hide-system-icons
     title: Hide System Icons
     description: OS window controls
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-status-bar
+  - id: cybrcore-hide-status-bar
     title: Hide Status Bar
     type: class-toggle
     default: false
@@ -865,47 +865,47 @@ settings:
       - label: Pink
         value: cybr-status-pi
 
-  - id: cybrsidian-hide-scrollbars
+  - id: cybrcore-hide-scrollbars
     title: Hide Scrollbars
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-tooltips
+  - id: cybrcore-hide-tooltips
     title: Hide Tooltips
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-instructions
+  - id: cybrcore-hide-instructions
     title: Hide Prompt Instructions
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-search-suggestions
+  - id: cybrcore-hide-search-suggestions
     title: Hide Search Suggestions
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-search-count
+  - id: cybrcore-hide-search-count
     title: Hide Search Match Count
     type: class-toggle
     default: false
 
-  - id: cybrsidian-hide-properties-reading
+  - id: cybrcore-hide-properties-reading
     title: Hide Properties in Reading View
     type: class-toggle
     default: false
 
-  - id: cybrsidian-maximize-media
+  - id: cybrcore-maximize-media
     title: Maximize Media
     type: class-toggle
     default: true
 
-  - id: cybrsidian-image-grids
+  - id: cybrcore-image-grids
     title: Image Grids
     type: class-toggle
     default: true
 
-  - id: cybrsidian-cards-columns
+  - id: cybrcore-cards-columns
     title: Card Columns
     descripton: "Add CSS class 'cards' to a note"
     type: class-select
@@ -926,14 +926,14 @@ settings:
     level: 2
     collapsed: true
 
-  - id: cybrsidian-focus-mode
+  - id: cybrcore-focus-mode
     title: Focus Mode
     description: Collapses sidebars. Reveal on hover.
     type: class-toggle
     default: false
     addCommand: true
 
-  - id: cybrsidian-focus-reveal-hover
+  - id: cybrcore-focus-reveal-hover
     title: Reveal on Hover
     type: class-toggle
     default: true
@@ -1333,10 +1333,10 @@ h6 { color: var(--cybr-h6); }
 .workspace-leaf-header-display-title, .prompt-instructions,
 .search-result-file-matched-text { color: var(--cybr-wh0) !important; }
 
-body.cybrsidian-underline-internal     .internal-link  { text-decoration: underline; }
-body:not(.cybrsidian-underline-internal) .internal-link { text-decoration: none; }
-body.cybrsidian-underline-external     .external-link  { text-decoration: underline; }
-body:not(.cybrsidian-underline-external) .external-link { text-decoration: none; }
+body.cybrcore-underline-internal     .internal-link  { text-decoration: underline; }
+body:not(.cybrcore-underline-internal) .internal-link { text-decoration: none; }
+body.cybrcore-underline-external     .external-link  { text-decoration: underline; }
+body:not(.cybrcore-underline-external) .external-link { text-decoration: none; }
 
 .markdown-preview-view mark, .cm-s-obsidian .cm-highlight {
   color: var(--cybr-ye0) !important;
@@ -1625,16 +1625,16 @@ body { background-color: var(--cybr-no0); }
 .workspace-split.mod-root .view-content,
 .view-header, .is-focused .view-header { background-color: transparent !important; }
 
-body.cybrsidian-maximize-media .image-embed img,
-body.cybrsidian-maximize-media .video-embed video,
-body.cybrsidian-maximize-media iframe { width: 100%; }
-body.cybrsidian-image-grids .markdown-preview-view p > .image-embed { display: inline-block; vertical-align: top; }
+body.cybrcore-maximize-media .image-embed img,
+body.cybrcore-maximize-media .video-embed video,
+body.cybrcore-maximize-media iframe { width: 100%; }
+body.cybrcore-image-grids .markdown-preview-view p > .image-embed { display: inline-block; vertical-align: top; }
 
-body.cybrsidian-focus-mode .workspace-split.mod-left-split,
-body.cybrsidian-focus-mode .workspace-split.mod-right-split,
-body.cybrsidian-focus-mode .workspace-ribbon { width: 0 !important; overflow: hidden; opacity: 0; }
-body.cybrsidian-focus-mode.cybrsidian-focus-reveal-hover .workspace-split.mod-left-split:hover,
-body.cybrsidian-focus-mode.cybrsidian-focus-reveal-hover .workspace-split.mod-right-split:hover { width: var(--sidebar-width) !important; opacity: 1; }
+body.cybrcore-focus-mode .workspace-split.mod-left-split,
+body.cybrcore-focus-mode .workspace-split.mod-right-split,
+body.cybrcore-focus-mode .workspace-ribbon { width: 0 !important; overflow: hidden; opacity: 0; }
+body.cybrcore-focus-mode.cybrcore-focus-reveal-hover .workspace-split.mod-left-split:hover,
+body.cybrcore-focus-mode.cybrcore-focus-reveal-hover .workspace-split.mod-right-split:hover { width: var(--sidebar-width) !important; opacity: 1; }
 
 /* #endregion */
 
@@ -1865,25 +1865,25 @@ input[type='range'] { background-color: var(--cybr-s2); }
 
 /* #region UI VISIBILITY */
 
-body.cybrsidian-hide-right-top  .mod-top-right-space .workspace-tab-header-container    { display: none; }
-body.cybrsidian-hide-tabs       .workspace-tab-header-container    { display: none; }
-body.cybrsidian-hide-status-bar .status-bar                        { display: none; }
-body.cybrsidian-hide-ribbon     .workspace-ribbon                  { display: none; }
-body.cybrsidian-hide-tooltips   .tooltip                           { display: none; }
-body.cybrsidian-hide-nav-buttons .nav-buttons-container            { display: none; }
-body.cybrsidian-hide-system-icons .frame-controls-container,
-body.cybrsidian-hide-system-icons .titlebar-button-container,
-body.cybrsidian-hide-system-icons .window-controls,
-body.cybrsidian-hide-system-icons .titlebar-inner                  { display: none; }
-body.cybrsidian-hide-scrollbars ::-webkit-scrollbar                { display: none; }
-body.cybrsidian-hide-scrollbars                                    { scrollbar-width: none; }
-body.cybrsidian-hide-instructions     .prompt-instructions         { display: none; }
-body.cybrsidian-hide-search-suggestions .search-suggest-container  { display: none; }
-body.cybrsidian-hide-search-count     .search-result-count         { display: none; }
-body.cybrsidian-hide-properties-reading .markdown-preview-view .metadata-container { display: none; }
-body.cybrsidian-hide-bottom-nav   .workspace-sidedock-vault-profile { display: none !important; }
-body.cybrsidian-hide-sidebar-toggle .sidebar-toggle-button,
-body.cybrsidian-hide-sidebar-toggle .workspace-ribbon-collapse-btn { display: none; }
+body.cybrcore-hide-right-top  .mod-top-right-space .workspace-tab-header-container    { display: none; }
+body.cybrcore-hide-tabs       .workspace-tab-header-container    { display: none; }
+body.cybrcore-hide-status-bar .status-bar                        { display: none; }
+body.cybrcore-hide-ribbon     .workspace-ribbon                  { display: none; }
+body.cybrcore-hide-tooltips   .tooltip                           { display: none; }
+body.cybrcore-hide-nav-buttons .nav-buttons-container            { display: none; }
+body.cybrcore-hide-system-icons .frame-controls-container,
+body.cybrcore-hide-system-icons .titlebar-button-container,
+body.cybrcore-hide-system-icons .window-controls,
+body.cybrcore-hide-system-icons .titlebar-inner                  { display: none; }
+body.cybrcore-hide-scrollbars ::-webkit-scrollbar                { display: none; }
+body.cybrcore-hide-scrollbars                                    { scrollbar-width: none; }
+body.cybrcore-hide-instructions     .prompt-instructions         { display: none; }
+body.cybrcore-hide-search-suggestions .search-suggest-container  { display: none; }
+body.cybrcore-hide-search-count     .search-result-count         { display: none; }
+body.cybrcore-hide-properties-reading .markdown-preview-view .metadata-container { display: none; }
+body.cybrcore-hide-bottom-nav   .workspace-sidedock-vault-profile { display: none !important; }
+body.cybrcore-hide-sidebar-toggle .sidebar-toggle-button,
+body.cybrcore-hide-sidebar-toggle .workspace-ribbon-collapse-btn { display: none; }
 
 /* Always-on cleanup */
 .view-header-left, .view-actions                                   { display: none !important; }
@@ -1916,19 +1916,19 @@ body.cybr-wp-yoyogi    { --cybr-wp-url: url('https://cdn.jsdelivr.net/gh/scherre
 body.cybr-wp-harajuku  { --cybr-wp-url: url('https://8upload.com/image/e0476e0c873ea751/harajuku-7680x4320.png'); }
 body.cybr-wp-akihabara { --cybr-wp-url: url('https://8upload.com/image/4c466f8c734441c9/akihabara-4480x2520.jpg'); }
 
-body.cybrsidian-solid-bg::before { display: none !important; }
-body.cybrsidian-solid-bg { background-color: var(--cybr-bg-color, var(--cybr-no0)) !important; }
-body.cybrsidian-solid-bg.cybr-bg-no { --cybr-bg-color: var(--cybr-no0); }
-body.cybrsidian-solid-bg.cybr-bg-re { --cybr-bg-color: var(--cybr-re0); }
-body.cybrsidian-solid-bg.cybr-bg-gr { --cybr-bg-color: var(--cybr-gr0); }
-body.cybrsidian-solid-bg.cybr-bg-ye { --cybr-bg-color: var(--cybr-ye0); }
-body.cybrsidian-solid-bg.cybr-bg-bl { --cybr-bg-color: var(--cybr-bl0); }
-body.cybrsidian-solid-bg.cybr-bg-vi { --cybr-bg-color: var(--cybr-vi0); }
-body.cybrsidian-solid-bg.cybr-bg-cy { --cybr-bg-color: var(--cybr-cy0); }
-body.cybrsidian-solid-bg.cybr-bg-wh { --cybr-bg-color: var(--cybr-wh0); }
-body.cybrsidian-solid-bg.cybr-bg-me { --cybr-bg-color: var(--cybr-me0); }
-body.cybrsidian-solid-bg.cybr-bg-or { --cybr-bg-color: var(--cybr-or0); }
-body.cybrsidian-solid-bg.cybr-bg-pi { --cybr-bg-color: var(--cybr-pi0); }
+body.cybrcore-solid-bg::before { display: none !important; }
+body.cybrcore-solid-bg { background-color: var(--cybr-bg-color, var(--cybr-no0)) !important; }
+body.cybrcore-solid-bg.cybr-bg-no { --cybr-bg-color: var(--cybr-no0); }
+body.cybrcore-solid-bg.cybr-bg-re { --cybr-bg-color: var(--cybr-re0); }
+body.cybrcore-solid-bg.cybr-bg-gr { --cybr-bg-color: var(--cybr-gr0); }
+body.cybrcore-solid-bg.cybr-bg-ye { --cybr-bg-color: var(--cybr-ye0); }
+body.cybrcore-solid-bg.cybr-bg-bl { --cybr-bg-color: var(--cybr-bl0); }
+body.cybrcore-solid-bg.cybr-bg-vi { --cybr-bg-color: var(--cybr-vi0); }
+body.cybrcore-solid-bg.cybr-bg-cy { --cybr-bg-color: var(--cybr-cy0); }
+body.cybrcore-solid-bg.cybr-bg-wh { --cybr-bg-color: var(--cybr-wh0); }
+body.cybrcore-solid-bg.cybr-bg-me { --cybr-bg-color: var(--cybr-me0); }
+body.cybrcore-solid-bg.cybr-bg-or { --cybr-bg-color: var(--cybr-or0); }
+body.cybrcore-solid-bg.cybr-bg-pi { --cybr-bg-color: var(--cybr-pi0); }
 
 /* #endregion */
 
@@ -2146,7 +2146,7 @@ body.cybr-mono-lt-wh { --cybr-mono-fg: var(--cybr-no0); --cybr-mono-bg: var(--cy
 
 /* ── Main remap block ────────────────────────────────────────────────────── */
 
-body.cybrsidian-mono {
+body.cybrcore-mono {
 
   /* Wallpaper off, solid bg */
   background-color: var(--cybr-mono-bg) !important;
@@ -2201,88 +2201,88 @@ body.cybrsidian-mono {
   --cybr-cc-vivid: var(--cybr-mono-fg);
 }
 
-body.cybrsidian-mono::before { display: none !important; }
+body.cybrcore-mono::before { display: none !important; }
 
 
 /* ── Hardcoded color overrides ───────────────────────────────────────────── */
 
 /* §7 Callouts — type-specific rules have (0,2,0); body prefix lifts us to (0,3,0) */
-body.cybrsidian-mono .callout[data-callout] {
+body.cybrcore-mono .callout[data-callout] {
   --cybr-cc-fg:    var(--cybr-mono-fg);
   --cybr-cc-bg:    color-mix(in oklch, var(--cybr-mono-fg) 15%, transparent);
   --cybr-cc-vivid: var(--cybr-mono-fg);
 }
 
 /* §8 Task checkboxes — gr0 checked, me0 unchecked, me2 cancelled */
-body.cybrsidian-mono input[type=checkbox] {
+body.cybrcore-mono input[type=checkbox] {
   background-color: color-mix(in oklch, var(--cybr-mono-fg) 25%, transparent) !important;
 }
-body.cybrsidian-mono input[type=checkbox]:hover {
+body.cybrcore-mono input[type=checkbox]:hover {
   background-color: color-mix(in oklch, var(--cybr-mono-fg) 35%, transparent) !important;
 }
-body.cybrsidian-mono input[type=checkbox]:checked {
+body.cybrcore-mono input[type=checkbox]:checked {
   background-color: var(--cybr-mono-fg) !important;
 }
-body.cybrsidian-mono input[type=checkbox]:checked::after {
+body.cybrcore-mono input[type=checkbox]:checked::after {
   background-color: var(--cybr-mono-bg) !important;
 }
-body.cybrsidian-mono input[data-task="-"]:checked {
+body.cybrcore-mono input[data-task="-"]:checked {
   background-color: color-mix(in oklch, var(--cybr-mono-fg) 20%, transparent) !important;
 }
 
 /* §8 Checked task text — hardcoded gr0 */
-body.cybrsidian-mono .task-list-item.is-checked .task-list-item-checkbox ~ * {
+body.cybrcore-mono .task-list-item.is-checked .task-list-item-checkbox ~ * {
   color: color-mix(in oklch, var(--cybr-mono-fg) 50%, transparent) !important;
 }
 
 /* §15 Settings toggles — re2/re0 unchecked, gr2/gr0 checked */
-body.cybrsidian-mono .checkbox-container {
+body.cybrcore-mono .checkbox-container {
   background-color: color-mix(in oklch, var(--cybr-mono-fg) 20%, transparent) !important;
 }
-body.cybrsidian-mono .checkbox-container::after {
+body.cybrcore-mono .checkbox-container::after {
   background-color: var(--cybr-mono-fg) !important;
 }
-body.cybrsidian-mono .checkbox-container.is-enabled {
+body.cybrcore-mono .checkbox-container.is-enabled {
   background-color: color-mix(in oklch, var(--cybr-mono-fg) 40%, transparent) !important;
 }
-body.cybrsidian-mono .checkbox-container.is-enabled::after {
+body.cybrcore-mono .checkbox-container.is-enabled::after {
   background-color: var(--cybr-mono-fg) !important;
 }
 
 /* §5 Highlights — hardcoded ye0/ye2 */
-body.cybrsidian-mono .markdown-preview-view mark,
-body.cybrsidian-mono .cm-s-obsidian .cm-highlight {
+body.cybrcore-mono .markdown-preview-view mark,
+body.cybrcore-mono .cm-s-obsidian .cm-highlight {
   color: var(--cybr-mono-bg) !important;
   background-color: var(--cybr-mono-fg) !important;
 }
 
 /* §4 Strikethrough — hardcoded me0 */
-body.cybrsidian-mono .markdown-preview-view s,
-body.cybrsidian-mono .cm-strikethrough {
+body.cybrcore-mono .markdown-preview-view s,
+body.cybrcore-mono .cm-strikethrough {
   color: color-mix(in oklch, var(--cybr-mono-fg) 45%, transparent) !important;
 }
 
 /* §5 Code comments — hardcoded bl0 */
-body.cybrsidian-mono .cm-comment {
+body.cybrcore-mono .cm-comment {
   color: color-mix(in oklch, var(--cybr-mono-fg) 50%, transparent) !important;
 }
 
 /* §CUSTOM CHECKBOXES — all glyph colors hardcoded per task type */
-body.cybrsidian-mono input[data-task]:checked::after {
+body.cybrcore-mono input[data-task]:checked::after {
   color: var(--cybr-mono-fg) !important;
 }
 
 /* §SPEECH BUBBLES — bg colors hardcoded per slot */
-body.cybrsidian-mono .task-list-item[data-task="0"],
-body.cybrsidian-mono .task-list-item[data-task="1"],
-body.cybrsidian-mono .task-list-item[data-task="2"],
-body.cybrsidian-mono .task-list-item[data-task="3"],
-body.cybrsidian-mono .task-list-item[data-task="4"],
-body.cybrsidian-mono .task-list-item[data-task="5"],
-body.cybrsidian-mono .task-list-item[data-task="6"],
-body.cybrsidian-mono .task-list-item[data-task="7"],
-body.cybrsidian-mono .task-list-item[data-task="8"],
-body.cybrsidian-mono .task-list-item[data-task="9"] {
+body.cybrcore-mono .task-list-item[data-task="0"],
+body.cybrcore-mono .task-list-item[data-task="1"],
+body.cybrcore-mono .task-list-item[data-task="2"],
+body.cybrcore-mono .task-list-item[data-task="3"],
+body.cybrcore-mono .task-list-item[data-task="4"],
+body.cybrcore-mono .task-list-item[data-task="5"],
+body.cybrcore-mono .task-list-item[data-task="6"],
+body.cybrcore-mono .task-list-item[data-task="7"],
+body.cybrcore-mono .task-list-item[data-task="8"],
+body.cybrcore-mono .task-list-item[data-task="9"] {
   background-color: color-mix(in oklch, var(--cybr-mono-fg) 85%, transparent) !important;
   color:            var(--cybr-mono-bg) !important;
   --bold-color:     var(--cybr-mono-bg);
@@ -2291,16 +2291,16 @@ body.cybrsidian-mono .task-list-item[data-task="9"] {
 }
 
 /* §SPEECH BUBBLES live preview border colors — hardcoded per slot */
-body.cybrsidian-mono .HyperMD-task-line[data-task="0"],
-body.cybrsidian-mono .HyperMD-task-line[data-task="1"],
-body.cybrsidian-mono .HyperMD-task-line[data-task="2"],
-body.cybrsidian-mono .HyperMD-task-line[data-task="3"],
-body.cybrsidian-mono .HyperMD-task-line[data-task="4"],
-body.cybrsidian-mono .HyperMD-task-line[data-task="5"],
-body.cybrsidian-mono .HyperMD-task-line[data-task="6"],
-body.cybrsidian-mono .HyperMD-task-line[data-task="7"],
-body.cybrsidian-mono .HyperMD-task-line[data-task="8"],
-body.cybrsidian-mono .HyperMD-task-line[data-task="9"] {
+body.cybrcore-mono .HyperMD-task-line[data-task="0"],
+body.cybrcore-mono .HyperMD-task-line[data-task="1"],
+body.cybrcore-mono .HyperMD-task-line[data-task="2"],
+body.cybrcore-mono .HyperMD-task-line[data-task="3"],
+body.cybrcore-mono .HyperMD-task-line[data-task="4"],
+body.cybrcore-mono .HyperMD-task-line[data-task="5"],
+body.cybrcore-mono .HyperMD-task-line[data-task="6"],
+body.cybrcore-mono .HyperMD-task-line[data-task="7"],
+body.cybrcore-mono .HyperMD-task-line[data-task="8"],
+body.cybrcore-mono .HyperMD-task-line[data-task="9"] {
   border-left-color: var(--cybr-mono-fg) !important;
 }
 
