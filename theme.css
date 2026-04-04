@@ -17,11 +17,11 @@ settings:
   - id: cybrcore-wallpaper
     title: Wallpaper
     type: class-select
-    default: cybr-wp-none
+    default: cybr-wp-samurai
     options:
       - label: None
         value: cybr-wp-none
-      - label: Samurai
+      - label: Samurai (default)
         value: cybr-wp-samurai
       - label: Chiyoda
         value: cybr-wp-chiyoda
@@ -48,7 +48,7 @@ settings:
     title: Workspace Opacity
     description: "0 = wallpaper fully visible · 1 = fully opaque"
     type: variable-number-slider
-    default: 0.85
+    default: 0
     min: 0
     max: 1
     step: 0.01
@@ -314,11 +314,11 @@ settings:
   - id: cybr-h2-sel
     title: H2
     type: class-select
-    default: cybr-h2-p
+    default: cybr-h2-s
     options:
-      - label: Primary (default)
+      - label: Primary
         value: cybr-h2-p
-      - label: Secondary
+      - label: Secondary (default)
         value: cybr-h2-s
       - label: Tertiary
         value: cybr-h2-t
@@ -346,10 +346,10 @@ settings:
   - id: cybr-h3-sel
     title: H3
     type: class-select
-    default: cybr-h3-me
+    default: cybr-h3-p
     options:
       - label: Primary
-        value: cybr-h3-p
+        value: cybr-h3-p (default)
       - label: Secondary
         value: cybr-h3-s
       - label: Tertiary
@@ -368,7 +368,7 @@ settings:
         value: cybr-h3-cy
       - label: White
         value: cybr-h3-wh
-      - label: Grey (default)
+      - label: Grey
         value: cybr-h3-me
       - label: Orange
         value: cybr-h3-or
@@ -378,9 +378,9 @@ settings:
   - id: cybr-h4-sel
     title: H4
     type: class-select
-    default: cybr-h4-me
+    default: cybr-h4-s
     options:
-      - label: Primary
+      - label: Primary (default)
         value: cybr-h4-p
       - label: Secondary
         value: cybr-h4-s
@@ -400,7 +400,7 @@ settings:
         value: cybr-h4-cy
       - label: White
         value: cybr-h4-wh
-      - label: Grey (default)
+      - label: Grey
         value: cybr-h4-me
       - label: Orange
         value: cybr-h4-or
@@ -410,9 +410,9 @@ settings:
   - id: cybr-h5-sel
     title: H5
     type: class-select
-    default: cybr-h5-me
+    default: cybr-h5-p
     options:
-      - label: Primary
+      - label: Primary (default)
         value: cybr-h5-p
       - label: Secondary
         value: cybr-h5-s
@@ -432,7 +432,7 @@ settings:
         value: cybr-h5-cy
       - label: White
         value: cybr-h5-wh
-      - label: Grey (default)
+      - label: Grey
         value: cybr-h5-me
       - label: Orange
         value: cybr-h5-or
@@ -442,13 +442,13 @@ settings:
   - id: cybr-h6-sel
     title: H6
     type: class-select
-    default: cybr-h6-p
+    default: cybr-h6-t
     options:
       - label: Primary (default)
         value: cybr-h6-p
       - label: Secondary
         value: cybr-h6-s
-      - label: Tertiary
+      - label: Tertiary (default)
         value: cybr-h6-t
       - label: Red
         value: cybr-h6-re
@@ -739,7 +739,7 @@ settings:
   # ══ MONOCHROME ══════════════════════════════════════════════════════════
 
   - id: s-mono
-    title: Monochrome
+    title: Monochrome (WIP)
     description: "Collapses all colors to a single fg · bg pair. Overrides everything above."
     type: heading
     level: 1
