@@ -8,7 +8,7 @@
 
 # Steps
 ## 0. Before you start  
-- Install [Geist Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/GeistMono.zip)  
+- Make sure [Geist Mono Nerd Font](https://www.nerdfonts.com/font-downloads) is installed
 - Install Style Settings plugin  
     - Open Obsidian Settings `[cmd/ctrl] + [,]`  
     - Go to `Community plugins` and turn off `Restricted mode`  
