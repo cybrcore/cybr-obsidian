@@ -2061,7 +2061,7 @@ input[data-task="f"]:checked::after { content: ""; color: var(--cybr-or0); }
 /* Mute subfolders and items */
 .tree-item-children .nav-file-title,
 .tree-item-children .nav-folder-title {
-  color: color-mix(in oklch, var(--folder-color, var(--cybr-s0)) 80%, var(--cybr-no0)) !important;
+  color: color-mix(in oklch, var(--folder-color, var(--cybr-s0)) 80%, var(--cybr-no0));
 
   &:hover {
     color: var(--cybr-no0) !important;
