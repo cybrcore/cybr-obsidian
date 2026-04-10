@@ -1167,8 +1167,8 @@ body.cybr-fc8-wh .nav-files-container > div > .tree-item:nth-child(9) { --folder
   --file-header-background:       transparent;
 
   --text-normal:          var(--cybr-p0);
-  --text-muted:           var(--cybr-p1);
-  --text-faint:           var(--cybr-p2);
+  --text-muted:           var(--cybr-t0);
+  --text-faint:           var(--cybr-t0);
   --text-on-accent:       var(--cybr-no0);
   --text-error:           var(--cybr-re0);
   --text-warning:         var(--cybr-ye0);
@@ -1251,7 +1251,7 @@ body.cybr-fc8-wh .nav-files-container > div > .tree-item:nth-child(9) { --folder
 .workspace-tab-header::before,
 .workspace-tab-header::after { display: none !important; box-shadow: none !important; }
 
-::selection { color: var(--cybr-no0) !important; background-color: var(--cybr-p0) !important; }
+::selection { color: var(--cybr-p0) !important; background-color: var(--cybr-p1) !important; }
 .cm-s-obsidian .cm-selectionBackground,
 .cm-selectionBackground { background-color: var(--cybr-p2) !important; }
 
@@ -1326,13 +1326,18 @@ hr { border-top: 1px solid var(--cybr-hr); border-bottom: none; border-left: non
 
 /* #region TAGS */
 
-.cm-hashtag { background-color: var(--cybr-p0) !important; color: var(--cybr-no0) !important; border: none !important; }
-.cm-hashtag-begin { clip-path: var(--clip-xs-t); padding-left: 0.4em; }
-.cm-hashtag-end   { clip-path: var(--clip-xs-b); padding-right: 0.4em; }
+.cm-hashtag {
+  color: var(--cybr-s0) !important;
+  background: transparent !important;
+  border: none !important;
+}
 .cm-hashtag:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; }
 
-a.tag { background-color: var(--cybr-p0); color: var(--cybr-no0) !important; clip-path: var(--clip-xs); border: none !important; padding: var(--tag-padding-y) var(--tag-padding-x); }
-a.tag:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; }
+.cm-hashtag.cm-hashtag-begin,
+.cm-hashtag.cm-hashtag-end {
+  border: none !important;
+  padding: 0 !important;
+}
 
 /* #endregion */
 
@@ -1345,6 +1350,10 @@ a.tag:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cy
   border: none !important;
   border-radius: 0 !important;
   background-color: var(--cybr-cc-bg, var(--cybr-p2)) !important;
+}
+
+.cm-callout .edit-block-button {
+  color: var(--cybr-no0) !important;
 }
 
 /* All text → cc-fg */
@@ -1484,6 +1493,12 @@ body.cybr-cards-auto .cards .markdown-preview-view div > ul { grid-template-colu
 .cards .markdown-preview-view div > ul > li { background-color: var(--cybr-p2) !important; clip-path: var(--clip-m); color: var(--cybr-p0) !important; padding: 1em; list-style: none; }
 .cards .markdown-preview-view div > ul > li:hover { background-color: var(--cybr-hover-bg) !important; color: var(--cybr-hover-fg) !important; }
 
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"] .cm-inline-code,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] .cm-inline-code {
+  color: var(--checklist-done-color) !important;
+  background-color: var(--cybr-gr2) !important;
+}
+
 /* #endregion */
 
 
@@ -1508,7 +1523,7 @@ body.cybr-cards-auto .cards .markdown-preview-view div > ul { grid-template-colu
   color: var(--cybr-prop0) !important;
   background-color: transparent !important;
 
-  &:hover .multi-select-pill-remove-button { color: var(--cybr-hover-fg) !important; }
+  &:hover, .multi-select-pill-remove-button:hover { color: var(--cybr-hover-fg) !important; }
 }
 
 .metadata-property[data-property-key="tags"] .multi-select-pill {
@@ -1538,10 +1553,10 @@ body.cybr-cards-auto .cards .markdown-preview-view div > ul { grid-template-colu
 /* #region CODEBLOCKS */
 
 .cm-s-obsidian .cm-inline-code:not(.cm-formatting),
+.cm-formatting.cm-formatting-code,
 .markdown-preview-view code:not(pre code) {
   color: var(--cybr-p0) !important;
   background-color: var(--cybr-p2) !important;
-  clip-path: var(--clip-xs);
   border-radius: 0 !important;
 }
 
@@ -1551,7 +1566,9 @@ body.cybr-cards-auto .cards .markdown-preview-view div > ul { grid-template-colu
 
 .markdown-preview-view pre { background-color: var(--cybr-p2) !important; clip-path: var(--clip-m); border: none !important; }
 .markdown-preview-view pre code { color: var(--cybr-p0) !important; }
-.code-block-flair { color: var(--cybr-no0) !important; background-color: var(--cybr-t0) !important; clip-path: var(--clip-s); border-radius: 0 !important; }
+.code-block-flair { color: var(--cybr-no0) !important; background-color: var(--cybr-me0) !important; clip-path: var(--clip-s); border-radius: 0 !important; }
+
+.HyperMD-quote .cm-inline-code.cm-quote { color: var(--cybr-p0) !important; background-color: transparent !important;}
 
 /* #endregion */
 
@@ -2027,8 +2044,6 @@ input[data-task="f"]:checked::after { content: ""; color: var(--cybr-or0); }
    Folders beyond position 8 fall back to --cybr-s0.
    Last child is always --cybr-me0 (grey), regardless of position.        */
 
-/* #region FOLDER COLORS */
-
 .nav-files-container > div > .tree-item:nth-child(2)  { --folder-color: var(--cybr-folder-1, var(--cybr-re0)); }
 .nav-files-container > div > .tree-item:nth-child(3)  { --folder-color: var(--cybr-folder-2, var(--cybr-or0)); }
 .nav-files-container > div > .tree-item:nth-child(4)  { --folder-color: var(--cybr-folder-3, var(--cybr-ye0)); }
@@ -2057,5 +2072,76 @@ input[data-task="f"]:checked::after { content: ""; color: var(--cybr-or0); }
 .tree-item-children {
   --nav-indentation-guide-color: color-mix(in oklch, var(--folder-color, var(--cybr-s0)) 60%, var(--cybr-no0)) !important;
 }
+
+/* #endregion */
+
+/* #region PLUGIN: CALENDAR */
+/* DESC */
+.container.svelte-pcimu8 {
+	--color-text-weeknum: var(--cybr-me0) !important;
+	--color-text-heading: var(--cybr-me0) !important;
+	--color-dot: var(--cybr-s0) !important;
+	--color-text-today: var(--cybr-t0) !important;
+	--color-text-day: var(--cybr-s0) !important;
+	--color-text-title: var(--cybr-p0) !important;
+	--color-arrow: var(--cybr-s0) !important;
+	--color-button: var(--cybr-p0) !important;
+	--text-muted: var(--cybr-s0) !important;
+	--interactive-accent:  var(--cybr-p0) !important;
+}
+
+.day.svelte-q3wqg9 {
+  color: var(--cybr-p0) !important;
+}
+
+.has-note.day.svelte-q3wqg9 {
+  color: var(--color-text-day) !important;
+}
+
+.day.adjacent-month.svelte-q3wqg9 {
+  --color-dot: var(--cybr-s1) !important;
+  color: var(--cybr-s1) !important;
+  opacity: 1 !important;
+}
+
+.day.svelte-q3wqg9:hover {
+  --color-dot: var(--cybr-hover-fg) !important;
+  color: var(--cybr-hover-fg) !important;
+  background-color: var(--cybr-hover-bg) !important;
+}
+
+.day.active.svelte-q3wqg9 {
+	--color-dot: var(--cybr-no0) !important;
+  color: var(--cybr-no0) !important;
+  background-color: var(--cybr-p0) !important;
+
+  &:hover {
+      background-color: var(--cybr-s0) !important;
+  }
+}
+
+  .container.svelte-pcimu8 {
+    .title {
+      font-size: 1.2em !important;
+      .month, .year {
+        font-weight: 400 !important;
+      }
+    }
+    .reset-button {
+        margin: auto auto !important;
+        height: 16px !important;
+        align-content: center !important;
+
+        &:hover {
+          color: var(--cybr-hover-fg) !important;
+        }
+    }
+    svg:hover {
+        color: var(--cybr-hover-fg) !important;
+      }
+    th {
+        color: var(--cybr-p0) !important;
+      }
+    }
 
 /* #endregion */
