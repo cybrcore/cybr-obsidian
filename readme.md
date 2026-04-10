@@ -14,7 +14,14 @@
     - Go to `Community plugins` and turn off `Restricted mode`  
     - In `Community plugins` click `Browse`, search for `Style Settings` by mgmeyers and click `Install`  
 
-## 1. Install theme
+## a. Install theme with Obsidian
 - Open Obsidian Settings `[cmd/ctrl] + [,]`
 - Go to `Appearance` and click `Manage`
 - Search for `cybr-obsidian` by cybrcore and click `Use`
+
+## b. Manual install
+- Download `theme.css` and `manifest.json` from this repo
+- Navigate to `YOUR-VAULT-NAME/.obsidian/themes/`
+- Create a new folder called `cybrcore`
+- Place both files inside the `cybrcore` folder
+- In Obsidian: Settings > Appearance > Themes > Select `cybrcore`
