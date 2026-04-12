@@ -24,12 +24,24 @@ Individual color control extends to:
 - Status bar color
 
 ### Colored folders
-The 8 top-level folders in the file explorer can each be assigned a distinct color (requires Colored Folders toggle in UI settings).
+The 8 top-level folders in the file explorer can each be assigned a distinct color (requires `Colored Folders` toggle in UI settings).
 
 ## UI
 In-built Focus mode functionality, collapses both sidebars with option to reveal on hover.
 
-In-built Hider functionality. Hide `tab headers`, `ribbon`, `right top bar`, `sidebar toggle buttons`, `file explorer buttons`, `vault profile`, `system icons`, `status bar`, `scrollbars`, `tooltips`, `search suggestions`, and `properties` in reading view.
+In-built Hider functionality, gide
+- `Rab headers`,
+- `Ribbon`,
+- `Right top bar`,
+- `Sidebar toggle buttons`,
+- `File explorer buttons`,
+- `Vault profile`,
+- `System icons`,
+- `Status bar`,
+- `Scrollbars`,
+- `Tooltips`,
+- `Search suggestions`,
+- `Properties` in reading view.
 
 Internal and external link underlining are toggled independently.
 
@@ -66,56 +78,12 @@ To update:
 cd YOUR-VAULT/.obsidian/themes/cybrcore && git pull
 ```
 
+## ~~Install theme with Obsidian~~  
+
 > [!NOTE]
 > Theme currently under review by the Obsidian team.  
 > Once approved, it will be available directly from the community theme browser.  
 
-## ~~Install theme with Obsidian~~  
 - ~~Open Obsidian Settings `[cmd/ctrl] + [,]`~~
 - ~~Go to `Appearance` and click `Manage`~~
 - ~~Search for `cybr-obsidian` by cybrcore and click `Use`~~
-
-
-Style Settings
-Requires the Style Settings plugin.
-Wallpaper
-Select from 11 cybrpapers wallpapers (Samurai, Shibuya, Shinjuku, Chiyoda, Minato, Yoyogi, Roppongi, Taito, Ikebukuro, Harajuku, Akihabara), or disable wallpaper entirely and use a solid background in any palette color.
-Colors
-Three role colors — primary, secondary, tertiary — each independently assignable to any palette color.
-
-Primary drives text, headings, tags, and active states
-Secondary drives interactive elements, navigation, and buttons
-Tertiary drives external links
-
-Individual color control extends to each heading level (H1–H6), blockquotes, properties, and the status bar background.
-Colored Folders
-The 8 top-level folders in the file explorer can each be assigned a distinct color. Requires the Colored Folders toggle in UI settings.
-UI
-Focus mode collapses both sidebars, with an option to reveal on hover.
-No Hider plugin needed — hide any combination of: tab headers, ribbon, right top bar, sidebar toggle buttons, file explorer buttons, vault profile, system icons, status bar, scrollbars, tooltips, search suggestions, and properties in reading view.
-Internal and external link underlining toggled independently.
-Media maximized by default. Image grids can be toggled. Card column count (for notes with the cards CSS class) selectable: 2, 3, 4, or auto.
-Installation
-Prerequisites
-
-Geist Mono Nerd Font installed
-Style Settings plugin installed
-
-Manual
-GUI
-
-Download theme.css and manifest.json from this repo
-Navigate to YOUR-VAULT/.obsidian/themes/
-Create a folder called cybrcore
-Place both files inside it
-In Obsidian: Settings > Appearance > Themes > cybrcore
-
-CLI
-shgit clone --filter=blob:none --sparse --depth 1 \
-  https://github.com/cybrcore/cybr-obsidian.git \
-  YOUR-VAULT/.obsidian/themes/cybrcore
-
-cd YOUR-VAULT/.obsidian/themes/cybrcore
-git sparse-checkout set --no-cone theme.css manifest.json
-To update:
-shcd YOUR-VAULT/.obsidian/themes/cybrcore && git pull
