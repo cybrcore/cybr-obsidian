@@ -87,3 +87,6 @@ cd YOUR-VAULT/.obsidian/themes/cybrcore && git pull
 - ~~Open Obsidian Settings `[cmd/ctrl] + [,]`~~
 - ~~Go to `Appearance` and click `Manage`~~
 - ~~Search for `cybr-obsidian` by cybrcore and click `Use`~~
+
+# Credits
+- [dastanmedetbekov](https://github.com/dastanmedetbekov) -- creator of independent beta version of this theme
